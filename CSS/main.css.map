@@ -1,9 +1,13 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,IAAI,AAAC,CACJ,KAAK,CAAE,GAAG,CACV",
+    "mappings": "ACAA,AAAA,OAAO,AAAC,CACP,OAAO,CAAE,IAAI,CACb,AEFD,MAAM,EAAE,SAAS,EAAE,MAAM,EACxB,AAAA,iBAAiB,AAAC,CACjB,OAAO,CAAE,IAAI,CACb,CEHF,AAAA,gBAAgB,AAAC,CAChB,OAAO,CAAE,IAAI,CACb",
     "sources": [
         "../SCSS/main.scss",
-        "../SCSS/_config.scss"
+        "../SCSS/_config.scss",
+        "../SCSS/_component.scss",
+        "../SCSS/_desktop.scss",
+        "../SCSS/_tablet.scss",
+        "../SCSS/_mobile.scss"
     ],
     "names": [],
     "file": "main.css"

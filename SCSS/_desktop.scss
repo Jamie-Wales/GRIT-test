@@ -1,5 +1,173 @@
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
+	// Config ----------------------------------------------
 	.hide-for-desktop {
 		display: none;
 	}
+
+	body {
+		font-size: 1.125rem;
+	}
+
+	.hide-for-mobile.hide-for-mobile {
+		display: inline;
+	}
+	//done this for specificity not an error.
+
+	body .heading--large {
+		font-size: 3.875rem;
+		line-height: 5.125rem;
+	}
+	body .heading--medium {
+		font-size: 2.625rem;
+	}
+
+	body .copy--main {
+		line-height: 2rem;
+		font-size: 1.125rem;
+	}
+
+	// Navigation ----------------------------------------------
+	.navigation {
+		padding-top: 20px;
+	}
+
+	.navigation__left,
+	.navigation__right {
+		display: flex;
+		padding-bottom: 50px;
+		justify-content: center;
+		align-content: center;
+		width: 40%;
+	}
+	.navigation__left ul,
+	.navigation__right ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.navigation__left ul li,
+	.navigation__right ul li {
+		list-style: none;
+	}
+
+	.navigation .navigation__logo {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		width: 20%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.navigation__logo img {
+		height: 50%;
+		width: 100%;
+	}
+	// Hero ----------------------------------------------
+	section.hero {
+		grid-template-columns: repeat(11, 1fr);
+		grid-template-rows: repeat(12, 70px);
+	}
+
+	.hero .hero__text {
+		grid-row: 3;
+		grid-column: 3 / 7;
+		width: 30rem;
+	}
+
+	.hero__image--right {
+		height: 600px;
+		width: 600px;
+		grid-column: 11;
+		z-index: 100;
+	}
+
+	.hero__image--left {
+		grid-column: 1;
+		grid-row: 3 / 10;
+
+		z-index: 100;
+	}
+
+	.hero img {
+		width: 100%;
+	}
+
+	// about ---------
+	section.about {
+		height: 43.75rem;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		height: 90rem;
+		margin: 0 5%;
+	}
+
+	.about .about__image {
+		grid-column: 1 / 13;
+		height: 31.25rem;
+	}
+
+	section .about__left {
+		margin: 0;
+		grid-column: 1 / span 6;
+		grid-row: 2 / 6;
+		height: auto;
+	}
+
+	section .about__right {
+		margin: 0;
+		grid-row: 2 / 6;
+		grid-column: 7 / span 12;
+		height: auto;
+	}
+
+	section.about .heading--medium span {
+		font-family: 'Gilroy';
+		font-size: 1rem;
+		display: inline-block;
+		height: 3.875rem;
+		width: 3.875rem;
+		border-radius: 60%;
+		text-align: center;
+		margin-right: 1.25rem;
+		background-color: $grey;
+		color: $orange;
+	}
+
+	.about .about__left .about__left__btn,
+	.about .about__right .about__right__btn {
+		margin-top: 12.5rem;
+	}
+
+	.footer {
+		display: flex;
+		padding-top: 9.4375rem;
+		justify-content: space-evenly;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.footer__address {
+		height: 11.8125rem;
+		width: 17.6875rem;
+	}
+
+	.footer ul li {
+		width: 10.3125rem;
+		list-style: none;
+	}
+
+	.footer__navigation__main {
+		font-weight: 700;
+	}
+
+	.hero .hero__image--right img {
+		opacity: 1;
+	}
+}
+// Config ----------------------------------------------
+
+.btn {
+	font-family: inherit;
 }

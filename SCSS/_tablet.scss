@@ -1,2 +1,7 @@
-@media (max-width: 960px) {
+@media (min-width: 768px) {
+	section.hero .hero__image--right {
+		z-index: -1;
+		width: 100%;
+		grid-column: -1;
+	}
 }
